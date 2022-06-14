@@ -1,0 +1,189 @@
+$color1: rgb(245, 245, 245);
+$color2: rgb(236, 35, 35);
+
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@import "table";
+a {
+  text-decoration: none;
+}
+
+form {
+  margin: auto;
+  width: 70%;
+
+  input,
+  select {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid $color2;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: rgb(246, 242, 236);
+    }
+  }
+}
+
+button {
+  border: none;
+  background-color: $color2;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: gray;
+  }
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $color1;
+
+  input {
+    border: none;
+    padding: 5px;
+    width: 100px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .search-bar {
+    width: 200px;
+
+    a {
+      color: $color2;
+      padding: 10px;
+      background-color: white;
+    }
+  }
+}
+
+.patient-log {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    margin-top: 10px;
+  }
+}
+
+.new-patient-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+
+  button {
+    width: 100%;
+  }
+}
+
+.old-patient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color1;
+  padding: 20px;
+}
+
+.patient-login {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.774);
+  height: 0;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  transition-duration: 0.3s;
+
+  form {
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+  }
+}
+
+#cancel {
+  background-color: red;
+}
+
+.counts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+
+  .number {
+    display: grid;
+    place-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid black;
+
+    &:hover {
+      width: 110px;
+      height: 110px;
+    }
+
+    &:hover p {
+      font-size: 2em;
+      font-weight: 700;
+      color: red;
+    }
+
+    p {
+      font-size: 1.3em;
+    }
+  }
+
+  #text {
+    text-align: center;
+    font-weight: 900;
+  }
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  background-color: $color2;
+  p {
+    color: white;
+    padding: 10px;
+  }
+}
+
+@import "login";
+@import "dashboard";

@@ -1,0 +1,43 @@
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    transition: .2s ease-in-out;
+}
+
+.testdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.button {
+    display: grid;
+    place-content: center;
+    position: relative;
+    width: 200px;
+    height: 100px;
+
+}
+
+.button::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    background-color: skyblue;
+    width: 0;
+    height: 100px;
+    z-index: -1;
+    transition: .2s ease-in-out;
+}
+
+.button:hover::after{
+    width: 200px;
+}
+
+.button:hover a{
+    color: white;
+}

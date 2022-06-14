@@ -1,0 +1,388 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.patientview {
+  height: 100%;
+  padding: 30px;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  padding: 10px;
+}
+
+th {
+  background-color: #ec2323;
+  color: white;
+}
+
+td {
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  margin: auto;
+  width: 70%;
+}
+
+form input, form select {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ec2323;
+}
+
+form input:hover, form input:focus, form select:hover, form select:focus {
+  outline: none;
+  background-color: #f6f2ec;
+}
+
+button {
+  border: none;
+  background-color: #ec2323;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+header input {
+  border: none;
+  padding: 5px;
+  width: 100px;
+}
+
+header input:focus {
+  outline: none;
+}
+
+header .search-bar {
+  width: 200px;
+}
+
+header .search-bar a {
+  color: #ec2323;
+  padding: 10px;
+  background-color: white;
+}
+
+.patient-log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.patient-log button {
+  margin-top: 10px;
+}
+
+.new-patient-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.new-patient-form button {
+  width: 100%;
+}
+
+.old-patient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.patient-login {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.774);
+  height: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.patient-login form {
+  width: 500px;
+  background-color: white;
+  padding: 20px;
+}
+
+#cancel {
+  background-color: red;
+}
+
+.counts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.counts .number {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.counts .number:hover {
+  width: 110px;
+  height: 110px;
+}
+
+.counts .number:hover p {
+  font-size: 2em;
+  font-weight: 700;
+  color: red;
+}
+
+.counts .number p {
+  font-size: 1.3em;
+}
+
+.counts #text {
+  text-align: center;
+  font-weight: 900;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #ec2323;
+}
+
+footer p {
+  color: white;
+  padding: 10px;
+}
+
+header.login-page {
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  text-align: center;
+}
+
+.login-main {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.login {
+  width: 550px;
+  background-color: whitesmoke;
+  padding: 30px;
+}
+
+.login button {
+  width: 100%;
+}
+
+.login p {
+  text-align: center;
+}
+
+.admin-panel {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-menu {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  background-color: #ec2323;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.nav-menu a {
+  color: white;
+}
+
+#user_picture {
+  margin-bottom: 10px;
+  padding: 10px 0;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white;
+  border-bottom: 1px dotted white;
+}
+
+#pic {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.nav-links {
+  width: 100%;
+}
+
+.nav-links a {
+  display: block;
+  margin: 0 0 0 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav-links .active {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: white;
+  color: #383333;
+  font-weight: 900;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.logout a {
+  display: block;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.logout a:hover {
+  background-color: #dad1d1;
+}
+
+.views {
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+
+.minimize-nav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.3em;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.open {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

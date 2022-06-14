@@ -1,0 +1,20 @@
+.patientview{
+    height: 100%;
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+}
+
+table,th,td{
+    padding: 10px;
+}
+th {
+    background-color: $color2;
+    color: white;
+}
+
+td {
+    background-color: $color1;
+}

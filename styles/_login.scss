@@ -1,0 +1,25 @@
+header.login-page{
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+.login-main{
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+}
+
+.login {
+    width: 550px;
+    background-color: $color1;
+    padding: 30px;
+
+    button{
+        width: 100%;
+    }
+    p{
+        text-align: center;
+    }
+
+}
